@@ -1,0 +1,61 @@
+.button-standard{
+  background-color: #24306E;
+  color: #ffffff;
+}
+
+.button-standard:hover{
+  background-color: #67b5dd !important;
+}
+
+nav#navbar-example2{
+  background-color: #67b5dd !important;
+  color: #ffffff !important;
+}
+
+.nav-link:hover{
+  background-color: #24306E !important;
+}
+
+.nav-link.active{
+  background-color: #24306E !important;
+}
+
+.nav-link{
+  color: #ffffff !important;
+}
+
+.navbar-brand{
+  color: #ffffff !important;
+}
+
+/* pages */
+.needs-validation{
+  margin-bottom: 10vh;
+}
+
+/* src/index.css */
+
+.card-img {
+  object-fit: cover;
+  height: 200px; /* Ajusta la altura según sea necesario */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribuye el contenido verticalmente */
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.card {
+  height: 100%; /* Asegura que todas las tarjetas tengan la misma altura */
+}

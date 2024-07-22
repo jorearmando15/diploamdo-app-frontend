@@ -1,0 +1,95 @@
+/* General Navbar Styling */
+.navbar {
+    background-color: #343a40; /* Fondo oscuro para la barra de navegación */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil para un efecto de elevación */
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: #ffffff; /* Color claro para el nombre del sitio */
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    margin-left: 1rem;
+    color: #e9ecef; /* Color claro para los enlaces */
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f8f9fa; /* Color más claro para el estado hover */
+    background-color: #495057; /* Fondo más oscuro para el hover */
+    border-radius: 0.25rem; /* Bordes redondeados en hover */
+}
+
+/* Styling for dropdown button */
+.nav-item.dropdown .nav-link.dropdown-toggle {
+    color: #ffffff; /* Color de texto blanco para el botón */
+    background-color: #495057; /* Color de fondo gris oscuro para el botón */
+    border: none; /* Sin borde para una apariencia más limpia */
+    border-radius: 0.25rem; /* Bordes redondeados para un estilo moderno */
+    padding: 0.5rem 1rem; /* Padding para el botón */
+    font-weight: 500; /* Peso de fuente mediano para mejor visibilidad */
+    transition: background-color 0.3s, color 0.3s; /* Transiciones suaves para hover */
+}
+
+.nav-item.dropdown .nav-link.dropdown-toggle:hover,
+.nav-item.dropdown .nav-link.dropdown-toggle:focus {
+    background-color: #6c757d; /* Fondo más claro para el hover y focus */
+    color: #ffffff; /* Color de texto blanco en hover y focus */
+}
+
+/* Estilo para el menú desplegable */
+.dropdown-menu {
+    background-color: #495057; /* Fondo oscuro para el menú desplegable */
+    border: none; /* Sin borde para una apariencia más limpia */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil para el menú desplegable */
+    min-width: 200px; /* Ancho mínimo para el menú desplegable */
+}
+
+/* Estilo para los elementos del menú desplegable */
+.dropdown-item {
+    color: #e9ecef; /* Color claro para los elementos del menú desplegable */
+    padding: 0.75rem 1.25rem; /* Espaciado para los elementos del menú desplegable */
+    border-radius: 0.25rem; /* Bordes redondeados para un estilo más moderno */
+    transition: background-color 0.3s, color 0.3s; /* Transiciones suaves para hover y focus */
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: #6c757d; /* Fondo más claro para el estado hover y focus */
+    color: #ffffff; /* Color del texto en hover y focus */
+}
+
+/* Estilo para el divider */
+.dropdown-divider {
+    border-top: 1px solid #6c757d; /* Línea divisoria con color que combina con el fondo del menú */
+}
+
+/* Button Styling */
+.navbar-toggler {
+    border: 1px solid #6c757d; /* Borde ligero para el botón de colapso */
+    background-color: #495057; /* Fondo oscuro para el botón de colapso */
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"%3e%3cpath stroke="%23e9ecef" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/%3e%3c/svg%3e'); /* Color claro para el icono del botón de colapso */
+}
+
+/* Styling for larger screens */
+@media (min-width: 992px) {
+    .navbar-nav.ml-auto {
+        margin-left: auto;
+    }
+    .logout {
+        margin-left: 1.5rem;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .navbar-nav {
+        margin-top: 1rem;
+    }
+}
